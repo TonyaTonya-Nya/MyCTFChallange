@@ -1,0 +1,22 @@
+6c0ec840f88d4cd7fcc6d5c6d1dafcc1cad7d0fcc2d1c6fcd6d0c6c7fccfcccfde
+#AIS3{t_every_bits_are_used_lol}
+#01000001->01111110
+#00111111
+#0x41->0x7e
+#0x49->0xad
+
+
+if __name__ == "__main__":
+    key = randbelow(M)
+
+    with open("c:/Users/Yuuki/Desktop/AIS3/Fast Cipher/chall/flag.txt", 'r') as f:
+        flag = f.read()
+    flag = bytes.fromhex(flag)
+
+
+    #ct = encrypt(open("c:/Users/Yuuki/Desktop/AIS3/Fast Cipher/chall/flag.txt", "rb").read().strip(), key)
+    ct = encrypt(flag, 0x3F)
+    print(ct.hex())
+
+
+edad6be35b2eef745f65766572795f626974735f6172655f757365645f6c6f6c7d
